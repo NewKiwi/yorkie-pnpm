@@ -4,6 +4,7 @@ const fs = require('fs')
 const path = require('path')
 const findParent = require('./utils/find-parent')
 const findHooksDir = require('./utils/find-hooks-dir')
+const isPnpm = require('./utils/manager').isPnpm
 const getHookScript = require('./utils/get-hook-script')
 const is = require('./utils/is')
 const hooks = require('./hooks.json')
@@ -66,7 +67,8 @@ function createHook(depDir, projectDir, hooksDir, hookName, runnerPath) {
 
 function installFrom(depDir) {
   try {
-    const isInSubNodeModule = (depDir.match(/node_modules/g) || []).length > 1
+    const inSubModuleLength = isPnpm() ? 2 : 1
+    const isInSubNodeModule = (depDir.match(/node_modules/g) || []).length > inSubModuleLength
     if (isInSubNodeModule) {
       return console.log(
         "trying to install from sub 'node_module' directory,",
