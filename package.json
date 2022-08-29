@@ -1,5 +1,5 @@
 {
-  "name": "yorkie",
+  "name": "@nk/yorkie-pnpm",
   "version": "2.0.0",
   "description": "githooks management forked from husky",
   "engines": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/yyx990803/yorkie.git"
+    "url": "git://github.com/NewKiwi/yorkie-pnpm.git"
   },
   "keywords": [
     "git",
@@ -35,9 +35,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yyx990803/yorkie/issues"
+    "url": "https://github.com/NewKiwi/yorkie-pnpm/issues"
   },
-  "homepage": "https://github.com/yyx990803/yorkie",
+  "homepage": "https://github.com/NewKiwi/yorkie-pnpm",
   "devDependencies": {
     "jest": "^20.0.4",
     "mkdirp": "^0.5.1",
