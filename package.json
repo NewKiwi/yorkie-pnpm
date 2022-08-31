@@ -1,5 +1,5 @@
 {
-  "name": "@nk/yorkie-pnpm",
+  "name": "@nkiwi/yorkie-pnpm",
   "version": "1.0.1",
   "description": "githooks management forked from husky",
   "engines": {
